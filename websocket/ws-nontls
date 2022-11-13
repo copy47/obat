@@ -1,4 +1,4 @@
-#!/usr/bin/python2
+#!/usr/bin/python
 import socket, threading, thread, select, signal, sys, time, getopt
 
 # Listen
@@ -224,7 +224,7 @@ class ConnectionHandler(threading.Thread):
 def print_usage():
     print 'Usage: proxy.py -p <port>'
     print '       proxy.py -b <bindAddr> -p <port>'
-    print '       proxy.py -b 0.0.0.0 -p 1080'
+    print '       proxy.py -b 0.0.0.0 -p 80'
 
 def parse_args(argv):
     global LISTENING_ADDR
